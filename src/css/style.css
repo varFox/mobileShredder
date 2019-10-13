@@ -34,7 +34,7 @@ body input {
   font-family: 'OpenSans';
 }
 header {
-  background: url('images/fon.png') center top no-repeat;
+  background: url('/images/fon.png') center top no-repeat;
   background-size: 100% 100%;
   padding-bottom: 110px;
 }
@@ -57,7 +57,7 @@ header .main-menu .menu-up::after {
   position: absolute;
   top: 30px;
   left: 0;
-  background: url('images/pun.png');
+  background: url('/images/pun.png');
 }
 header .main-menu .menu-up .data-info {
   display: -webkit-box;
@@ -176,7 +176,7 @@ section#process {
 section#process .advantages {
   width: 90%;
   height: 280px;
-  background: url('images/stick.png') center top no-repeat;
+  background: url('/images/stick.png') center top no-repeat;
   background-size: 100%;
   margin: 0 auto;
 }
@@ -190,16 +190,16 @@ section#process .advantages .img-circle {
   top: 30px;
 }
 section#process .advantages .advantage1 {
-  background: url('images/archive-185017000.png') center no-repeat;
+  background: url('/images/archive-185017000.png') center no-repeat;
 }
 section#process .advantages .advantage2 {
-  background: url('images/31214.png') center no-repeat;
+  background: url('/images/31214.png') center no-repeat;
 }
 section#process .advantages .advantage3 {
-  background: url('images/plp-akten-vernichten-dezember18.png') center no-repeat;
+  background: url('/images/plp-akten-vernichten-dezember18.png') center no-repeat;
 }
 section#process .advantages .advantage4 {
-  background: url('images/машина.png') center no-repeat;
+  background: url('/images/машина.png') center no-repeat;
 }
 section#process .advantages .advantage1,
 section#process .advantages .advantage2,
@@ -226,11 +226,11 @@ section#process .bg-img {
   height: 1000px;
 }
 section#process .bg-img1 {
-  background: url('images/right.png') right no-repeat;
+  background: url('/images/right.png') right no-repeat;
   background-size: contain;
 }
 section#process .bg-img2 {
-  background: url('images/left.png') left no-repeat;
+  background: url('/images/left.png') left no-repeat;
   background-size: contain;
 }
 section#process .steps-process {
@@ -285,7 +285,7 @@ section#process .steps-process .step05 {
 }
 section#orderShredder {
   background-color: #dedad7;
-  background: url('images/fon_dlya_formy.jpg') center top no-repeat;
+  background: url('/images/fon_dlya_formy.jpg') center top no-repeat;
   background-size: cover;
 }
 section#orderShredder .orderBy {
@@ -356,7 +356,7 @@ section#pricing .list-price .aboutPrice span {
 }
 section#question {
   color: #fff;
-  background: url('images/question.png') center center no-repeat;
+  background: url('/images/question.png') center center no-repeat;
   background-size: cover;
 }
 section#question h2,
@@ -424,7 +424,7 @@ section#contacts .main-menu .menu-up::after {
   position: absolute;
   top: 30px;
   left: 0;
-  background: url('images/pun.png');
+  background: url('/images/pun.png');
 }
 section#contacts .main-menu .menu-down {
   width: 100%;
@@ -636,11 +636,11 @@ footer .footerPRight {
 }
 @media (max-width: 1440px) {
   section#process .bg-img1 {
-    background: url('images/right1024.png') right no-repeat;
+    background: url('/images/right1024.png') right no-repeat;
     background-size: contain;
   }
   section#process .bg-img2 {
-    background: url('images/left1024.png') left no-repeat;
+    background: url('/images/left1024.png') left no-repeat;
     background-size: contain;
   }
 }
@@ -669,7 +669,7 @@ footer .footerPRight {
 }
 @media (max-width: 540px) {
   header {
-    background: url('images/books-1845614.jpg') center bottom no-repeat, #d3d4d6;
+    background: url('/images/books-1845614.jpg') center bottom no-repeat, #d3d4d6;
     background-size: 100% auto;
     padding-bottom: 60px;
   }
@@ -728,7 +728,7 @@ footer .footerPRight {
   section#contacts .main-menu .menu-up::after {
     height: 2px;
     top: 22px;
-    background: url('images/pun-mob.png');
+    background: url('/images/pun-mob.png');
   }
   header .block-header h2 {
     padding-top: 30px;
@@ -771,7 +771,7 @@ footer .footerPRight {
     width: 100%;
   }
   section#orderShredder {
-    background: url('images/tetka.png') center bottom no-repeat, #d3d4d6;
+    background: url('/images/tetka.png') center bottom no-repeat, #d3d4d6;
     background-size: 100% auto;
   }
   section#pricing .list-price .aboutPrice p,
