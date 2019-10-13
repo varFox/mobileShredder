@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const imgMenu = document.querySelector('header .main-menu .icon img');
       imgMenu.src = '/images/моб.меню.png';
       document.body.addEventListener('click', event => {
-        if ((event.target.classList.contains('close') && event.target.closest('.menu-mobil')) ||
+        if (((event.target.classList.contains('close') || event.target.href) && event.target.closest('.menu-mobil')) ||
           !event.target.closest('.menu-mobil') && mobilMenu.classList.contains('active-menu')) {
           mobilMenu.classList.remove('active-menu');
         }

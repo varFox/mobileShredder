@@ -72,6 +72,8 @@ header {
       }
 
       .data-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         float: right;
 
@@ -82,8 +84,12 @@ header {
 
         .mail,
         .tel {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          align-items: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
         }
 
       }
@@ -92,8 +98,12 @@ header {
 
     .menu-down {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       padding-top: 5px;
 
       p {
@@ -140,9 +150,15 @@ header {
 
       .mail,
       .tel {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
       }
     }
 
@@ -168,8 +184,12 @@ header {
     }
 
     li {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin: 8px 0;
       font-size: 18px;
       text-transform: uppercase;
@@ -489,8 +509,12 @@ section#question {
   }
 
   .boxForBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     button {
       float: none;
@@ -531,8 +555,12 @@ section#contacts {
 
     .menu-down {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       padding-top: 5px;
 
       .col1 {
@@ -550,8 +578,12 @@ section#contacts {
           margin-top: 45px;
 
           p {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             letter-spacing: 1px;
             position: relative;
             margin: 5px 35px;
@@ -634,9 +666,15 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .4);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     #popupForm {
       width: 640px;
@@ -669,6 +707,8 @@ footer {
       }
 
       .boxForBtn {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         button {
@@ -699,9 +739,15 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .4);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     .list-politic {
       padding: 40px 30px;
@@ -834,7 +880,10 @@ footer {
   header .main-menu h1 {
     width: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
+  }
+  header .block-header li {
+    font-size: 12px;
   }
 
   header .main-menu .menu-down p {
@@ -847,14 +896,17 @@ footer {
   }
 
   header .main-menu .icon img {
-    position: absolute;
+    position: fixed;
     width: 35px;
     left: 20px;
+    z-index: 301;
     // width: 100%;
   }
 
   header .main-menu .menu-down {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   header .main-menu .data-info-mobil {
@@ -875,7 +927,7 @@ footer {
     padding-top: 30px;
   }
   header .block-header ul {
-    margin: 20px 23px;
+    margin: 20px 15px;
   }
 
   section#process .steps-process .step {
@@ -1055,10 +1107,12 @@ footer {
     right: 0;
   }
   .close::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .close::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   #popup .popup-bg #popupForm .icon img {
     width: 50px;

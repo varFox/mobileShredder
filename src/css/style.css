@@ -60,6 +60,8 @@ header .main-menu .menu-up::after {
   background: url('/images/pun.png');
 }
 header .main-menu .menu-up .data-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   float: right;
 }
@@ -69,12 +71,20 @@ header .main-menu .menu-up .data-info img {
 }
 header .main-menu .menu-up .data-info .mail,
 header .main-menu .menu-up .data-info .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 header .main-menu .menu-down {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 5px;
 }
@@ -113,8 +123,14 @@ header .main-menu .data-info-mobil img {
 }
 header .main-menu .data-info-mobil .mail,
 header .main-menu .data-info-mobil .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 header .main-menu h1 {
@@ -133,7 +149,11 @@ header .block-header ul {
   margin: 20px 0;
 }
 header .block-header li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 8px 0;
   font-size: 18px;
@@ -372,7 +392,11 @@ section#question :-moz-placeholder {
   color: #fff;
 }
 section#question .boxForBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 section#question .boxForBtn button {
@@ -404,7 +428,11 @@ section#contacts .main-menu .menu-up::after {
 }
 section#contacts .main-menu .menu-down {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 5px;
 }
@@ -419,7 +447,11 @@ section#contacts .main-menu .menu-down .col1 .contactsBlock {
   margin-top: 45px;
 }
 section#contacts .main-menu .menu-down .col1 .contactsBlock p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   letter-spacing: 1px;
   position: relative;
@@ -483,8 +515,14 @@ footer .footerPRight {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 #popup .popup-bg #popupForm {
@@ -514,6 +552,8 @@ footer .footerPRight {
   margin: 12px auto;
 }
 #popup .popup-bg #popupForm .boxForBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #popup .popup-bg #popupForm .boxForBtn button {
@@ -537,8 +577,14 @@ footer .footerPRight {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 #popup-politic .popup-bg .list-politic {
@@ -649,7 +695,10 @@ footer .footerPRight {
   header .main-menu h1 {
     width: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
+  }
+  header .block-header li {
+    font-size: 12px;
   }
   header .main-menu .menu-down p {
     width: 100%;
@@ -659,11 +708,14 @@ footer .footerPRight {
     display: none;
   }
   header .main-menu .icon img {
-    position: absolute;
+    position: fixed;
     width: 35px;
     left: 20px;
+    z-index: 301;
   }
   header .main-menu .menu-down {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   header .main-menu .data-info-mobil {
@@ -682,7 +734,7 @@ footer .footerPRight {
     padding-top: 30px;
   }
   header .block-header ul {
-    margin: 20px 23px;
+    margin: 20px 15px;
   }
   section#process .steps-process .step {
     margin: 0;
@@ -832,9 +884,11 @@ footer .footerPRight {
     right: 0;
   }
   .close::before {
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   .close::after {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
   #popup .popup-bg #popupForm .icon img {
