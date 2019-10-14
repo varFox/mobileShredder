@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const showMobMenu = () => {
     if (screen.width <= 540) {
       const imgMenu = document.querySelector('header .main-menu .icon img');
-      imgMenu.src = '/images/моб.меню.png';
+      imgMenu.src = './images/molil-menu.png';
       document.body.addEventListener('click', event => {
         if (((event.target.classList.contains('close') || event.target.href) && event.target.closest('.menu-mobil')) ||
           !event.target.closest('.menu-mobil') && mobilMenu.classList.contains('active-menu')) {
