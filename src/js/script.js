@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!pun.classList.contains('mobil')) pun.classList.add('mobil');
       if (!pun2.classList.contains('mobil')) pun2.classList.add('mobil');
       imgMenu.src = './images/molil-menu.png';
-      texth2.innerHTML = 'Остались вопросы?</br> Свяжитесь с нами';
+      texth2.innerHTML = 'Остались вопросы?</br> Свяжитесь с нами.';
       document.body.addEventListener('click', event => {
         if (((event.target.classList.contains('close') || event.target.href) && event.target.closest('.menu-mobil')) ||
           !event.target.closest('.menu-mobil') && mobilMenu.classList.contains('active-menu')) {
