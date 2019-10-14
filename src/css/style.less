@@ -887,7 +887,7 @@ section#question .boxForBtn button,
 
   body button {
     width: 85%;
-    font-size: 16px;
+    font-size: 14px;
     padding: 20px;
     float: none;
     margin-right: auto;
@@ -1020,7 +1020,9 @@ section#question .boxForBtn button,
     background: url('../../images/tetka.png') center bottom no-repeat, #d3d4d6;
     background-size: 100% auto;
   }
-
+  section#pricing {
+    padding: 60px 10px;
+  }
   section#pricing .list-price .aboutPrice p,
   section#pricing .list-price .price p {
     max-width: 100%;
@@ -1111,7 +1113,7 @@ section#question .boxForBtn button,
   }
 
   section#contacts .main-menu .menu-down {
-    padding-top: 0;
+    padding-top: 5px;
     display: block;
   }
 
@@ -1210,18 +1212,33 @@ section#question .boxForBtn button,
   }
   section#contacts .main-menu h1,
   header .main-menu h1 {
-    font-size: 25px;
+    font-size: 21px;
   }
   section#contacts .main-menu .menu-down .col1 p.docP,
   header .main-menu .menu-down p {
-    font-size: 16px;
+    font-size: 14px;
   }
   header .main-menu .menu-up::after, 
   section#contacts .main-menu .menu-up::after {
-    top: 32px;
+    top: 27px;
   }
 }
-
+@media(max-width: 500px) {
+  section#process .advantages p {
+    width: 280px;
+    left: calc(~'50% - 140px');
+    font-size: 16px;
+    top: 270px;
+  }
+  section#process .advantages .img-circle {
+    width: 200px;
+    height: 200px;
+    left: calc(~'50% - 100px');
+  }
+  section#contacts .main-menu .icon img {
+    margin-top: 6px;
+}
+}
 @media(max-width: 425px) {
   section#process .advantages {
     height: 435px;
@@ -1248,11 +1265,11 @@ section#question .boxForBtn button,
   }
   section#contacts .main-menu h1,
   header .main-menu h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
   section#contacts .main-menu .menu-down .col1 p.docP,
   header .main-menu .menu-down p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -1274,11 +1291,11 @@ section#question .boxForBtn button,
   }
   section#contacts .main-menu h1,
   header .main-menu h1 {
-    font-size: 17px;
+    font-size: 14px;
   }
   section#contacts .main-menu .menu-down .col1 p.docP,
   header .main-menu .menu-down p {
-    font-size: 12px;
+    font-size: 10px;
   }
   header .main-menu .menu-up::after,
   section#contacts .main-menu .menu-up::after {
