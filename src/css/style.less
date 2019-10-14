@@ -40,10 +40,19 @@ body {
     padding: 10px;
     font-family: 'OpenSans';
   }
+
+  .boxForBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 
 header {
-  background: url('./images/fon.png') center top no-repeat;
+  background: url('../../images/fon.png') center top no-repeat;
   background-size: 100% 100%;
   padding-bottom: 110px;
 
@@ -68,7 +77,7 @@ header {
         position: absolute;
         top: 30px;
         left: 0;
-        background: url('/images/pun.png');
+        background: url('../../images/pun.png');
       }
 
       .data-info {
@@ -217,7 +226,7 @@ section#process {
   .advantages {
     width: 90%;
     height: 280px;
-    background: url('/images/stick.png') center top no-repeat;
+    background: url('../../images/stick.png') center top no-repeat;
     background-size: 100%;
     margin: 0 auto;
 
@@ -232,19 +241,19 @@ section#process {
     }
 
     .advantage1 {
-      background: url('/images/archive-185017000.png') center no-repeat;
+      background: url('../../images/archive-185017000.png') center no-repeat;
     }
 
     .advantage2 {
-      background: url('/images/31214.png') center no-repeat;
+      background: url('../../images/31214.png') center no-repeat;
     }
 
     .advantage3 {
-      background: url('/images/plp-akten-vernichten-dezember18.png') center no-repeat;
+      background: url('../../images/plp-akten-vernichten-dezember18.png') center no-repeat;
     }
 
     .advantage4 {
-      background: url('/images/машина.png') center no-repeat;
+      background: url('../../images/машина.png') center no-repeat;
     }
 
     .advantage1,
@@ -279,13 +288,13 @@ section#process {
 
   .bg-img1 {
     background:
-      url('/images/right.png') right no-repeat;
+      url('../../images/right.png') right no-repeat;
     background-size: contain;
   }
 
   .bg-img2 {
     background:
-      url('/images/left.png') left no-repeat;
+      url('../../images/left.png') left no-repeat;
     background-size: contain;
   }
 
@@ -323,7 +332,8 @@ section#process {
         width: 620px;
         word-spacing: 8px;
         font-size: 16px;
-        font-weight: 400;
+        font-family: 'PtSans';
+        font-weight: 600;
         line-height: 1.3;
 
         span {
@@ -355,7 +365,7 @@ section#process {
 
 section#orderShredder {
   background-color: #dedad7;
-  background: url('/images/fon_dlya_formy.jpg') center top no-repeat;
+  background: url('../../images/fon_dlya_formy.jpg') center top no-repeat;
   background-size: cover;
 
   .orderBy {
@@ -448,7 +458,7 @@ section#pricing {
 
 section#question {
   color: #fff;
-  background: url('/images/question.png') center center no-repeat;
+  background: url('../../images/question.png') center center no-repeat;
   background-size: cover;
 
   h2,
@@ -466,7 +476,7 @@ section#question {
   p {
     font-size: 16px;
     font-family: 'PtSansCaption';
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1px;
   }
 
@@ -532,7 +542,7 @@ section#contacts {
         position: absolute;
         top: 30px;
         left: 0;
-        background: url('/images/pun.png');
+        background: url('../../images/pun.png');
       }
 
     }
@@ -576,8 +586,8 @@ section#contacts {
               width: 18px;
               margin-right: 6px;
               position: absolute;
-              top: 0;
-              left: -35px;
+              top: 3px;
+              left: -30px;
             }
           }
         }
@@ -797,13 +807,13 @@ footer {
 @media(max-width: 1440px) {
   section#process .bg-img1 {
     background:
-      url('/images/right1024.png') right no-repeat;
+      url('../../images/right1024.png') right no-repeat;
     background-size: contain;
   }
 
   section#process .bg-img2 {
     background:
-      url('/images/left1024.png') left no-repeat;
+      url('../../images/left1024.png') left no-repeat;
     background-size: contain;
   }
 }
@@ -838,8 +848,8 @@ footer {
 
 @media(max-width: 540px) {
   header {
-    background: url('/images/books-1845614.jpg') center bottom no-repeat, #d3d4d6;
-    background-size: 100% auto;
+    background: url('../../images/books-1845614.png') bottom no-repeat;
+    background-size: cover;
     padding-bottom: 60px;
   }
 
@@ -850,8 +860,12 @@ footer {
   }
 
   body button {
-    width: 100%;
+    width: 85%;
     font-size: 16px;
+    padding: 20px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   body section {
@@ -886,6 +900,10 @@ footer {
     display: none;
   }
 
+  header .main-menu .data-info-mobil .mail {
+    margin-bottom: 5px;
+  }
+
   header .main-menu .icon img {
     position: fixed;
     width: 35px;
@@ -911,7 +929,12 @@ footer {
   section#contacts .main-menu .menu-up::after {
     height: 2px;
     top: 22px;
-    background: url('/images/pun-mob.png');
+  }
+
+  header .main-menu.mobil .menu-up::after,
+  section#contacts .main-menu.mobil .menu-up::after {
+    background: url('../../images/pun-mob.png');
+    background-size: 100%;
   }
 
   header .block-header h2 {
@@ -920,6 +943,10 @@ footer {
 
   header .block-header ul {
     margin: 20px 15px;
+  }
+
+  section#process .steps-process h2 {
+    margin-bottom: 20px;
   }
 
   section#process .steps-process .step {
@@ -965,7 +992,7 @@ footer {
   }
 
   section#orderShredder {
-    background: url('/images/tetka.png') center bottom no-repeat, #d3d4d6;
+    background: url('../../images/tetka.png') center bottom no-repeat, #d3d4d6;
     background-size: 100% auto;
   }
 
@@ -989,7 +1016,8 @@ footer {
   }
 
   section#orderShredder .orderBy form.order button {
-    float: right;
+    margin: 30px 0 0 0;
+    padding: 20px 40px;
   }
 
   section#pricing .list-price .namePrice {
@@ -1017,6 +1045,11 @@ footer {
     width: 85%;
   }
 
+  section#question .boxForBtn button {
+    padding: 20px 40px;
+    margin-top: 40px;
+  }
+
   section#contacts {
     padding-bottom: 30px;
   }
@@ -1026,7 +1059,8 @@ footer {
   }
 
   section#contacts .main-menu h1 {
-    font-size: 12px;
+    font-size: 14px;
+    letter-spacing: 1px;
     width: 100%;
     text-align: center;
   }
